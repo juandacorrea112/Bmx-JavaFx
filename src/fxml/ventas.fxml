@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.99" prefHeight="601.0" prefWidth="999.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllHome">
+   <children>
+      <ImageView fitHeight="739.0" fitWidth="1044.0" layoutX="-39.0" layoutY="43.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/pexels-cottonbro-5445300.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnGuardar" layoutX="331.0" layoutY="477.0" mnemonicParsing="false" onMouseClicked="#clickGuardar" prefHeight="46.0" prefWidth="367.0" style="-fx-background-color: transparent; -fx-border-color: #fff;" text="GUARDAR" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="WHITE" layoutX="331.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliente" wrappingWidth="69.3671875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="331.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Producto" wrappingWidth="119.3671875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtTatto" layoutX="331.0" layoutY="388.0" prefHeight="46.0" prefWidth="367.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text fill="WHITE" layoutX="331.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cantidad de partes" wrappingWidth="168.3671875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbClient" layoutX="331.0" layoutY="168.0" prefHeight="46.0" prefWidth="367.0" />
+      <ComboBox fx:id="cmbProduct" layoutX="331.0" layoutY="278.0" prefHeight="46.0" prefWidth="367.0" />
+      <Pane prefHeight="54.0" prefWidth="999.0" style="-fx-background-color: #000;">
+         <children>
+            <Button fx:id="home" layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#opensHome" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="INICIO" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="sales" layoutX="154.0" layoutY="9.0" mnemonicParsing="false" onAction="#opensVentas" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="VENTAS" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="productos" layoutX="318.0" layoutY="9.0" mnemonicParsing="false" onAction="#opensProductos" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="PRODUCTOS" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="clientes" layoutX="468.0" layoutY="9.0" mnemonicParsing="false" onAction="#opensClientes" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="CLIENTES" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Pane layoutX="286.0" prefHeight="54.0" prefWidth="11.0" style="-fx-background-color: #232323;">
+               <children>
+                  <Text fill="#f4850b" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="457.0" layoutY="-1.0" prefHeight="54.0" prefWidth="11.0" style="-fx-background-color: #232323;" />
+            <Pane layoutX="586.0" prefHeight="54.0" prefWidth="11.0" style="-fx-background-color: #232323;" />
+            <Pane prefHeight="54.0" prefWidth="11.0" style="-fx-background-color: #232323;" />
+         </children>
+      </Pane>
+      <Pane layoutX="135.0" prefHeight="54.0" prefWidth="11.0" style="-fx-background-color: #232323;" />
+   </children>
+</Pane>

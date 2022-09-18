@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="999.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label layoutX="458.0" layoutY="579.0" textFill="#868686" />
+      <ImageView fitHeight="1074.0" fitWidth="1232.0" layoutX="-46.0" layoutY="-216.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/BMXTALLORDER.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="329.0" layoutY="85.0" prefHeight="43.0" prefWidth="400.0" text="BMX FREESTYLE" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="357.0" layoutY="171.0" prefHeight="42.0" prefWidth="172.0" text="LOGUEATE" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginUser" layoutX="351.0" layoutY="246.0" prefHeight="34.0" prefWidth="256.0" promptText="Nombre Usuario" style="-fx-background-color: #FFF; -fx-border-color: #; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="loginPassword" layoutX="351.0" layoutY="315.0" prefHeight="34.0" prefWidth="256.0" promptText="Contraseña" style="-fx-background-color: #FFF; -fx-border-color: #FFF; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="loginMensage" layoutX="351.0" layoutY="364.0" prefHeight="52.0" prefWidth="256.0" textFill="#868686">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginSingUp" layoutX="351.0" layoutY="388.0" mnemonicParsing="false" onAction="#ingresarBtn" prefHeight="42.0" prefWidth="256.0" style="-fx-background-color: #232323; -fx-border-radius: 100;" text="ENTRE MANITO" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

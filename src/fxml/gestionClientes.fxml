@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="999.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllClientes">
+   <children>
+      <ImageView fitHeight="584.0" fitWidth="999.0" layoutY="57.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/pexels-photo-9824484.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="296.0" layoutY="87.0" prefHeight="457.0" prefWidth="407.0" style="-fx-background-color: #666; -fx-border-color: #B65513;">
+         <children>
+            <TextField fx:id="textfieldRespuesta" alignment="CENTER" editable="false" layoutX="60.0" layoutY="339.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.6" prefHeight="42.0" prefWidth="288.0" style="-fx-background-color: #666;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="txtIdentifi" layoutX="126.0" layoutY="104.0" prefHeight="34.0" prefWidth="213.0" promptText="Identificacion" style="-fx-background-color: transparent; -fx-border-color: #fff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="31.0" layoutY="101.0" prefHeight="42.0" prefWidth="107.0" text="Identificacion" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnNew" layoutX="25.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#actionNew" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: #666; -fx-border-radius: 100;" text="nuevo" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="29.0" layoutY="163.0" prefHeight="42.0" prefWidth="61.0" text="nombre" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="221.0" prefHeight="42.0" prefWidth="107.0" text="nombre usuario" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnUpdate" layoutX="273.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#actionUpdate" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: #666; -fx-border-radius: 100;" text="actualizar" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="151.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#actionDelete" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: #666; -fx-border-radius: 100;" text="borrar" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ComboBox fx:id="cmbGenero" layoutX="115.0" layoutY="293.0" prefHeight="35.0" prefWidth="236.0" />
+            <Label layoutX="29.0" layoutY="289.0" prefHeight="42.0" prefWidth="79.0" text="genero" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="24.0" prefHeight="43.0" prefWidth="163.0" text="gestionar cliente" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="126.0" layoutY="167.0" prefHeight="34.0" prefWidth="221.0" promptText="nombre" style="-fx-background-color: transparent; -fx-border-color: #fff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtApellido" layoutX="126.0" layoutY="225.0" prefHeight="34.0" prefWidth="221.0" promptText="Surname" style="-fx-background-color: transparent; -fx-border-color: #fff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="buscarImg" fitHeight="34.0" fitWidth="34.0" layoutX="345.0" layoutY="105.0" onMouseClicked="#buscarImgClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Captura%20de%20pantalla%202022-06-09%20104408.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane layoutY="3.0" prefHeight="54.0" prefWidth="999.0" style="-fx-background-color: #000;">
+         <children>
+            <Button fx:id="home" layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#opensHome" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="INICIO" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="sales" layoutX="154.0" layoutY="9.0" mnemonicParsing="false" onAction="#opensVentas" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="VENTAS" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="productos" layoutX="318.0" layoutY="9.0" mnemonicParsing="false" onAction="#opensProductos" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="PRODUCTOS" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="clientes" layoutX="468.0" layoutY="9.0" mnemonicParsing="false" onAction="#opensClientes" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="CLIENTES" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Pane layoutX="286.0" prefHeight="54.0" prefWidth="11.0" style="-fx-background-color: #232323;">
+               <children>
+                  <Text fill="#f4850b" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="457.0" layoutY="-1.0" prefHeight="54.0" prefWidth="11.0" style="-fx-background-color: #232323;" />
+            <Pane layoutX="586.0" prefHeight="54.0" prefWidth="11.0" style="-fx-background-color: #232323;" />
+            <Pane prefHeight="54.0" prefWidth="11.0" style="-fx-background-color: #232323;" />
+            <Pane layoutX="132.0" prefHeight="54.0" prefWidth="11.0" style="-fx-background-color: #232323;">
+               <children>
+                  <Text fill="#f4850b" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</Pane>
